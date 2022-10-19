@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="itunes.js"></script>
+    <title>API ITunes</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: cornflowerblue;
+        }
+        h3{
+            color: #fff;
+        }
+        #submit:hover{
+            background-color: #f00;
+            border: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container col-md-6">
+        <div>
+        <h3 class="mt-5">Estrazione di dati asincrona tramite API ITunes</h3>
+            <form id="cercaITunes">
+                <div class="input-group mb-3 mt-5">
+                    <input type="text" class="form-control" id="artista" placeholder="Scrivi il nome dell'artista/gruppo musicale" >
+                    <button class="btn btn-primary col-md-2" type="submit" id="submit">Invio</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+    <div class="container col-md-6 mt-5" id="listaTracks">
+
+       
+    </div>
+    
+      
+    
+</body>
+</html>
